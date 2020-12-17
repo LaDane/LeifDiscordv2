@@ -1,11 +1,13 @@
 import discord
 import time 
+import asyncio 
 
 from discord.ext import commands
 from pathlib import Path
 from datetime import datetime 
 
-rdfID = 475743507726991361      # guild id for RDF discord
+rdfID = 475743507726991361                  # guild id for RDF discord
+leifBotChannelID = 788995949660995585       # channel id for leifbot channel on RDF discord
 now = datetime.now()
 
 class DiscordLeif(commands.Bot):
@@ -22,7 +24,7 @@ class DiscordLeif(commands.Bot):
 
         for cog in self._cogs:
             self.load_extension(f"bot.cogs.{cog}")
-            print(f"Loaded '{cog} cog.")
+            print(f"Loaded '{cog}' cog.")
 
         print("Setup complete.")
 
@@ -37,6 +39,10 @@ class DiscordLeif(commands.Bot):
 
     async def shutdown(self):
         print("Closing connection to Discord")
+        
+        starting = False
+        await self.StartStopMessage(starting)
+
         await super().close()
 
     async def close(self):
@@ -52,11 +58,20 @@ class DiscordLeif(commands.Bot):
     async def on_disconnect(self):
         print("Bot disconnected.")
 
+    # async def on_error(self, err, *args, **kwargs):
+    #     try:
+    #         raise Exception()
+    #     except Exception as e:
+    #         raise e
+
+    # async def on_command_error(self, ctx, exc):
+    #     raise getattr(exc, "original", exc)
+
     async def on_ready(self):
         self.client_id = (await self.application_info()).id
-        print("Bot ready.")
         guild = self.get_guild(rdfID)
         registeredTime = now.strftime("%A  %d-%m-%Y  %H:%M:%S")     # the time at which the bot started
+        print("Bot ready.")
         print("=================================================================================")
         print("")
         print("  _____ _____  _____  _____ ____  _____  _____      _      ______ _____ ______ ")
@@ -73,6 +88,9 @@ class DiscordLeif(commands.Bot):
         print("=================================================================================")
         print("")
 
+        starting = True
+        await self.StartStopMessage(starting)
+
     async def prefix(self, bot, msg):
         return commands.when_mentioned_or("+")(bot, msg)
 
@@ -85,3 +103,22 @@ class DiscordLeif(commands.Bot):
     async def on_message(self, msg):
         if not msg.author.bot:
             await self.process_commands(msg)
+
+
+    async def StartStopMessage(self, starting):
+        rdf_guild = self.get_guild(rdfID)
+        leifbot_channel = rdf_guild.get_channel(leifBotChannelID)
+        
+        if starting == True:
+            registeredTime = now.strftime("%A  %d-%m-%Y  %H:%M:%S")     # the time at which the bot started
+
+            start_embed = discord.Embed(description = f"Discord Leif started at:\n\n__**{registeredTime}**__", color=0x303136)
+            start_embed.set_image(url="https://media.discordapp.net/attachments/747967053050151014/789031811661561866/unknown.png")
+            start_embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/729712343923294301/730044952687542273/RDF3.png")
+            await leifbot_channel.send(embed = start_embed)
+
+        if starting == False:
+            current_time = datetime.now()
+            registeredTime = current_time.strftime("%A  %d-%m-%Y  %H:%M:%S")     # the time at which the bot started
+            await leifbot_channel.send(f"Leif died at **{registeredTime}**")
+

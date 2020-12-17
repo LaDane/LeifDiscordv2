@@ -1,4 +1,4 @@
-# must install OpenJDK 13.0.2 and Lavalink #1079
+# must install OpenJDK 13.0.2 and Lavalink #1163
 # navigate to OpenJDK bin folder
 # java -jar Lavalink.jar
 
