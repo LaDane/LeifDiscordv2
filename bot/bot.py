@@ -12,7 +12,7 @@ now = datetime.now()
 
 class DiscordLeif(commands.Bot):
     def __init__(self):
-        self._cogs = [p.stem for p in Path(".").glob("./bot/cogs/*.py")]
+        self._cogs = [p.stem for p in Path(".").glob("./cogs/*.py")]
         super().__init__(
             command_prefix=self.prefix, 
             case_insensitive=True, 
@@ -23,7 +23,7 @@ class DiscordLeif(commands.Bot):
         print("Running setup...")
 
         for cog in self._cogs:
-            self.load_extension(f"bot.cogs.{cog}")
+            self.load_extension(f"cogs.{cog}")
             print(f"Loaded '{cog}' cog.")
 
         print("Setup complete.")
