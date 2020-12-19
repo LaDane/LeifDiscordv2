@@ -82,11 +82,12 @@ class DataUpdate(commands.Cog):
         mission_states = ["attending", "absent", "deltagerliste"]
         for mission_state in mission_states:
             for mission_date_time, value in self.mission.items():
-                # returned_members_check2 = ""
+                mission_type = value['type']
+                if mission_type != "Torsdags Mission" and mission_state == "deltagerliste":
+                    continue 
                 returned_members_check2 = {}
                 removed_members = ""                
                 for member_id in list(value[mission_state]):
-                    mission_type = value['type']
                     member = guild.get_member(int(member_id))
                     if member == None:
                         removed_members += f"<@{self.mission[mission_date_time][mission_state][member_id]['user_name']}> \n"
@@ -204,9 +205,9 @@ class DataUpdate(commands.Cog):
                     self.mission[mission_date_time][mission_state][member_id]['emoji_member_id'] = f":grey_question: <@{member_id}>"
                     continue
 
-                if mission_type == "Torsdags Mission" or mission_state == "deltagerliste":
-                    if medlem_role in member.roles and key_group in member.roles:
-                        for role_name, role_emoji in self.g_emoji.guild_roles.items():
+                if medlem_role in member.roles and key_group in member.roles:
+                    for role_name, role_emoji in self.g_emoji.guild_roles.items():
+                        if mission_type == "Torsdags Mission" or mission_state == "deltagerliste":
                             key_role = discord.utils.get(guild.roles, name = role_name)
                             if key_role in member.roles:
                                 self.mission[mission_date_time][mission_state][member_id] = {}
@@ -215,12 +216,12 @@ class DataUpdate(commands.Cog):
                                 self.mission[mission_date_time][mission_state][member_id]['role'] = role_name
                                 self.mission[mission_date_time][mission_state][member_id]['emoji_member_id'] = f"{role_emoji} <@{member_id}>"
                                 break   
-                        else:
-                            self.mission[mission_date_time][mission_state][member_id] = {}
-                            self.mission[mission_date_time][mission_state][member_id]['user_name'] = member_nick 
-                            self.mission[mission_date_time][mission_state][member_id]['group'] = group_name
-                            self.mission[mission_date_time][mission_state][member_id]['emoji_member_id'] = f"{group_emoji} <@{member_id}>"
-                            continue
+                    else:
+                        self.mission[mission_date_time][mission_state][member_id] = {}
+                        self.mission[mission_date_time][mission_state][member_id]['user_name'] = member_nick 
+                        self.mission[mission_date_time][mission_state][member_id]['group'] = group_name
+                        self.mission[mission_date_time][mission_state][member_id]['emoji_member_id'] = f"{group_emoji} <@{member_id}>"
+                        continue
             fh.save_file(self.mission, 'mission')
             await asyncio.sleep(0.2)
 
