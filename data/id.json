@@ -4,7 +4,11 @@
         "guild_id": 475743507726991361,
         "discord_bot_id": 729710632248672369,
         "ny_mission_channel_id": 737775006137843833,
-        "ny_mission_message_id": 789168794005536768,
+        "ny_mission_message_id": 789708504432508929,
+        "torsdags_mission_channel_id": 737774992678191215,
+        "deltagerliste_channel_id": 737775009782824970,
+        "hygge_mission_channel_id": 737774996918763541,
+        "special_events_channel_id": 737775001607995553,
         "leifbot_channel_id": 788995949660995585
     }
 }
