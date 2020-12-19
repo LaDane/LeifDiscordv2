@@ -112,7 +112,7 @@ class DiscordLeif(commands.Bot):
         if starting == True:
             registeredTime = now.strftime("%A  %d-%m-%Y  %H:%M:%S")     # the time at which the bot started
 
-            start_embed = discord.Embed(description = f"Discord Leif started at:\n\n__**{registeredTime}**__", color=0x303136)
+            start_embed = discord.Embed(description = f"Discord Leif started at:\n\n**{registeredTime}**", color=0x303136)
             start_embed.set_image(url="https://media.discordapp.net/attachments/747967053050151014/789031811661561866/unknown.png")
             start_embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/729712343923294301/730044952687542273/RDF3.png")
             await leifbot_channel.send(embed = start_embed)
