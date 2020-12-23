@@ -151,12 +151,13 @@ class UpdateMission:
         await original_embed_msg.edit(embed=hygge_special_embed)
 
         if ended == True:
-            special_needs_role = discord.utils.get(guild.roles, name="Special-Needs") 
             for date_time, value in self.mission.items():
                 if date_time == mission_date_time and value['type'] == "Special Events":
                     for userID_str in value['attending'].keys():
                         userID = int(userID_str)
                         special_needs_member = guild.get_member(userID)
-                        await special_needs_member.remove_roles(special_needs_role)
+                        special_needs_role = discord.utils.get(guild.roles, name="Special-Needs") 
+                        if special_needs_role in special_needs_member.roles:
+                            await special_needs_member.remove_roles(special_needs_role)
             del self.mission[mission_date_time]
             fh.save_file(self.mission, 'mission')

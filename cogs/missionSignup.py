@@ -90,9 +90,9 @@ class MissionSignup(commands.Cog):
                     await self.u_mission.UpdateMissionEmbed(guild, mission_date_time, "Deltagerliste", False)          # Update "Deltagerliste" with data from json  
 
                 if mission_type in ["Hygge Mission", "Special Events"]:
-                    if mission_type == "Special Events":
+                    if mission_type == "Special Events" and reaction == white_check_emoji:
                         special_needs_role = discord.utils.get(guild.roles, name='Special-Needs')
-                        await member.add_roles(special_needs_role)                                              # giver member "Special Needs" role
+                        await member.add_roles(special_needs_role)                                              # gives member "Special Needs" role
                     await self.u_mission.UpdateHyggeSpecialEmbed(guild, mission_date_time, mission_type, False) # Update "Hygge Mission" / "Special Events" with data from json
 
 
@@ -189,7 +189,7 @@ class MissionSignup(commands.Cog):
                 if mission_type in ["Hygge Mission", "Special Events"]:
                     if mission_type == "Special Events":
                         special_needs_role = discord.utils.get(guild.roles, name='Special-Needs')
-                        if special_needs_role in member.roles:
+                        if special_needs_role in member.roles and reaction == white_check_emoji:
                             await member.remove_roles(special_needs_role)                                               # removes "Special Needs" role
                     await self.u_mission.UpdateHyggeSpecialEmbed(guild, mission_date_time, mission_type, False)     # Update "Hygge Mission" / "Special Events" with data from json
 
