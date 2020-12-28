@@ -53,19 +53,33 @@ class DiscordLeif(commands.Bot):
         print(f"Connected to Discord (latency: {self.latency*1000:,.0f} ms).")
 
     async def on_resumed(self):
-        print("Bot resumed.")
+        datetimeNow = datetime.now()
+        resumeTime = datetimeNow.strftime("%A  %d-%m-%Y  %H:%M:%S")
+        print(f"Bot resumed at:            {resumeTime}")
 
-    async def on_disconnect(self):
-        print("Bot disconnected.")
+    # async def on_disconnect(self):
+    #     print("Bot disconnected.")
 
-    # async def on_error(self, err, *args, **kwargs):
-    #     try:
-    #         raise Exception()
-    #     except Exception as e:
-    #         raise e
+    async def on_error(self, err, *args, **kwargs):
+        # rdf_guild = self.get_guild(rdfID)
+        # leifbot_channel = rdf_guild.get_channel(leifBotChannelID)
+        try:
+            # error_exception = Exception()
+            # error_embed = discord.Embed(description = f"Error\n\n**{error_exception}**", color=0x303136)
+            # await leifbot_channel.send(embed = error_embed)
+            raise Exception()
+        except Exception as e:
+            # error_embed = discord.Embed(description = f"Error\n\n**{e}**", color=0x303136)
+            # await leifbot_channel.send(embed = error_embed)
+            raise e
 
-    # async def on_command_error(self, ctx, exc):
-    #     raise getattr(exc, "original", exc)
+    async def on_command_error(self, ctx, exc):
+        rdf_guild = self.get_guild(rdfID)
+        leifbot_channel = rdf_guild.get_channel(leifBotChannelID)        
+        error_exception = getattr(exc, "original", exc)
+        error_embed = discord.Embed(description = f"Error\n\n**{error_exception}**", color=0x303136)
+        await leifbot_channel.send(embed = error_embed)
+        raise getattr(exc, "original", exc)
 
     async def on_ready(self):
         self.client_id = (await self.application_info()).id

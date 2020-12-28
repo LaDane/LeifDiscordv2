@@ -5,20 +5,20 @@ from discord.utils import get
 
 class GuildEmojis:
     def __init__(self, guild):
-        self.guild = {'Kompagni-Stab' : self.kompagni_emoji(guild), '1. Del-Stab' : self.del_emoji(guild), '2. Del-Stab' : self.to_del_emoji(guild),
-                     '1-1' : self.en_en_emoji(guild), '1-2' : self.en_to_emoji(guild), '1-3' : self.en_tre_emoji(guild),
-                     '2-1' : self.to_en_emoji(guild), '2-2' : self.to_to_emoji(guild), '2-3' : self.to_tre_emoji(guild),
-                     'Lima' : self.lima_emoji(guild), 'Logi' : self.logi_emoji(guild), 'Zeus' : self.zeus_emoji(guild),
-                     'Prøve Medlem' : self.prve_emoji(guild),
-                     'People' : self.people_emoji(guild), 'Date' : self.mission_date(guild),
-                     'Time' : self.mission_time(guild), 'DF' : self.df_emoji(guild),
-                     'ADMBM' : self.admbm_emoji(guild), 'SIGMD' : self.sigmd_emoji(guild),
-                     'DELSYHJ' : self.delsyhj_emoji(guild), 'LMG2' : self.lmg2_emoji(guild),
-                     'GV4' : self.gv4_emoji(guild), 'GV2' : self.gv2_emoji(guild),
-                     'GF' : self.gf_emoji(guild), 'NK' : self.nk_emoji(guild),
-                     'SYHJ' : self.syhj_emoji(guild), 'GV5' : self.gv5_emoji(guild),
-                     'LMG1' : self.lmg1_emoji(guild),
-                     }
+        # self.guild = {'Kompagni-Stab' : self.kompagni_emoji(guild), '1. Del-Stab' : self.del_emoji(guild), '2. Del-Stab' : self.to_del_emoji(guild),
+        #              '1-1' : self.en_en_emoji(guild), '1-2' : self.en_to_emoji(guild), '1-3' : self.en_tre_emoji(guild),
+        #              '2-1' : self.to_en_emoji(guild), '2-2' : self.to_to_emoji(guild), '2-3' : self.to_tre_emoji(guild),
+        #              'Lima' : self.lima_emoji(guild), 'Logi' : self.logi_emoji(guild), 'Zeus' : self.zeus_emoji(guild),
+        #              'Prøve Medlem' : self.prve_emoji(guild),
+        #              'People' : self.people_emoji(guild), 'Date' : self.mission_date(guild),
+        #              'Time' : self.mission_time(guild), 'DF' : self.df_emoji(guild),
+        #              'ADMBM' : self.admbm_emoji(guild), 'SIGMD' : self.sigmd_emoji(guild),
+        #              'DELSYHJ' : self.delsyhj_emoji(guild), 'LMG2' : self.lmg2_emoji(guild),
+        #              'GV4' : self.gv4_emoji(guild), 'GV2' : self.gv2_emoji(guild),
+        #              'GF' : self.gf_emoji(guild), 'NK' : self.nk_emoji(guild),
+        #              'SYHJ' : self.syhj_emoji(guild), 'GV5' : self.gv5_emoji(guild),
+        #              'LMG1' : self.lmg1_emoji(guild),
+        #              }
 
         self.guild_groups = {'Kompagni-Stab' : self.kompagni_emoji(guild), '1. Del-Stab' : self.del_emoji(guild), '2. Del-Stab' : self.to_del_emoji(guild),
                      '1-1' : self.en_en_emoji(guild), '1-2' : self.en_to_emoji(guild), '1-3' : self.en_tre_emoji(guild),
@@ -31,7 +31,7 @@ class GuildEmojis:
                      'Time' : self.mission_time(guild)
                      }
 
-        self.guild_roles = {'DF' : self.df_emoji(guild),
+        self.guild_roles = {'DF' : self.df_emoji(guild), 'KC' : self.kc_emoji(guild),
                      'ADMBM' : self.admbm_emoji(guild), 'SIGMD' : self.sigmd_emoji(guild),
                      'DELSYHJ' : self.delsyhj_emoji(guild), 'LMG2' : self.lmg2_emoji(guild),
                      'GV4' : self.gv4_emoji(guild), 'GV2' : self.gv2_emoji(guild),
@@ -99,6 +99,9 @@ class GuildEmojis:
 # ROLES
     def df_emoji(self, guild):
         return get(guild.emojis, name='DF')  
+
+    def kc_emoji(self, guild):
+        return get(guild.emojis, name='KC')
 
     def admbm_emoji(self, guild):
         return get(guild.emojis, name='ADMBM')     

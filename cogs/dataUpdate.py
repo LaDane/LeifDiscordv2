@@ -22,12 +22,30 @@ class DataUpdate(commands.Cog):
 # LOOP TIME CHECK
     @commands.Cog.listener()
     async def on_ready(self):
+        has_updated = False
         while not self.bot.is_closed():
             current = datetime.now()
             current_time = current.strftime("%H:%M:%S")
-            if current_time == updateTime:
+            if (current_time == updateTime and has_updated == False):
+                has_updated == True
                 await self.DataUpdateEntries()
-                await asyncio.sleep(1)
+                await asyncio.sleep(60)
+                has_updated == False
+            elif (current_time == "05:00:15" and has_updated == False):
+                has_updated == True
+                await self.DataUpdateEntries()
+                await asyncio.sleep(60)
+                has_updated == False
+            elif (current_time == "05:00:30" and has_updated == False):
+                has_updated == True
+                await self.DataUpdateEntries()
+                await asyncio.sleep(60)
+                has_updated == False
+            elif (current_time == "05:00:45" and has_updated == False):
+                has_updated == True
+                await self.DataUpdateEntries()
+                await asyncio.sleep(60)
+                has_updated == False                 
             else:
                 await asyncio.sleep(1)
 
