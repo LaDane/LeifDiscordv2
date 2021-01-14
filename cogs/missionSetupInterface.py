@@ -95,6 +95,17 @@ class MissionSetupInterface(commands.Cog):
                 return
             await ny_mission_channel.purge(limit = 50)
 
+            # Check if 1 special events is already sat up
+            if mission_type == "Special Events":
+                for value in self.mission.values():
+                    for data_mission_types in value.values():
+                        if mission_type == data_mission_types:
+
+                            await ny_mission_channel.send("Der er allerede 1 Special Events mission igang, man kan ikke opsætte flere Special Events på en gang!")
+                            await asyncio.sleep(5)
+                            await self.NewMissionMessage(ny_mission_channel)
+                            return                
+
             # Choose date embed
             date_bot_embed = discord.Embed(title=f"Du har valgt at opsætte en **{mission_type}**",color=0x303136)
             date_bot_embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/729712343923294301/730044952687542273/RDF3.png")

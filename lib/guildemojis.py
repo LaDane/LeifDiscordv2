@@ -33,11 +33,11 @@ class GuildEmojis:
 
         self.guild_roles = {'DF' : self.df_emoji(guild), 'KC' : self.kc_emoji(guild),
                      'ADMBM' : self.admbm_emoji(guild), 'SIGMD' : self.sigmd_emoji(guild),
-                     'DELSYHJ' : self.delsyhj_emoji(guild), 'LMG2' : self.lmg2_emoji(guild),
-                     'GV4' : self.gv4_emoji(guild), 'GV2' : self.gv2_emoji(guild),
-                     'GF' : self.gf_emoji(guild), 'NK' : self.nk_emoji(guild),
-                     'SYHJ' : self.syhj_emoji(guild), 'GV5' : self.gv5_emoji(guild),
-                     'LMG1' : self.lmg1_emoji(guild),
+                     'SIKMD' : self.sikmd_emoji(guild), 'DELSYHJ' : self.delsyhj_emoji(guild), 
+                     'LMG2' : self.lmg2_emoji(guild), 'GV4' : self.gv4_emoji(guild), 
+                     'GV2' : self.gv2_emoji(guild), 'GF' : self.gf_emoji(guild), 
+                     'NK' : self.nk_emoji(guild), 'SYHJ' : self.syhj_emoji(guild), 
+                     'GV5' : self.gv5_emoji(guild), 'LMG1' : self.lmg1_emoji(guild),
                      }
 
 
@@ -108,6 +108,9 @@ class GuildEmojis:
 
     def sigmd_emoji(self, guild):
         return get(guild.emojis, name='SIGMD')
+
+    def sikmd_emoji(self, guild):
+        return get(guild.emojis, name="SIKMD")
 
     def delsyhj_emoji(self, guild):
         return get(guild.emojis, name='DELSYHJ')

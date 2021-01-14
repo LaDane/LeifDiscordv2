@@ -20,7 +20,7 @@ class GuildUserGroup:
         return 'Gruppeløs'
 
     async def checkgroup(self, guild, member):
-        return self.find_group(guild, member, ['Kompagni-Stab', '1. Del-Stab', '2. Del-Stab', '1-1', '1-2', '1-3', '2-1', '2-2', '2-3', 'Lima', 'Logi', 'Zeus', 'Prøve Medlem', 'People', 'Date', 'Time'])
+        return self.find_group(guild, member, ['Kompagni-Stab', '1. Del-Stab', '2. Del-Stab', '1-1', '1-2', '1-3', '2-1', '2-2', '2-3', 'Lima', 'Logi', 'Zeus', 'Prøve Medlem', 'Orlov', 'People', 'Date', 'Time'])
 
     async def checkrole(self, guild, member):
-        return self.find_group(guild, member, ['DF', 'ADMBM', 'SIGMD', 'DELSYHJ', 'LMG2', 'GV4', 'GV2', 'GF', 'NK', 'SYHJ', 'GV5', 'LMG1'])
+        return self.find_group(guild, member, ['DF', 'KC', 'ADMBM', 'SIGMD', 'SIKMD', 'DELSYHJ', 'LMG2', 'GV4', 'GV2', 'GF', 'NK', 'SYHJ', 'GV5', 'LMG1'])
