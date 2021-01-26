@@ -29,12 +29,12 @@ class Memes(commands.Cog):
             
             if orlov_role in user.roles:
                 horvy_emoji = get(guild.emojis, name='horvy')
-                await ctx.send(f"Du kan ikke være på orlov og have adgang til Memes kanalen på samme tid {horvy_emoji}")
+                await ctx.send(f"Du kan ikke være på orlov og have adgang til Memes kanalen på samme tid")
                 return 
 
             if memer_role not in user.roles and orlov_role not in user.roles:
                 memes_channel = discord.utils.get(guild.text_channels, name="memes-migmigs")
-                await memes_channel.send(f"@{user.id} har nu adgang til Memes!")
+                await memes_channel.send(f"<@{user.id}> har nu adgang til Memes! {horvy_emoji}")
                 await user.add_roles(memer_role)
 
 
