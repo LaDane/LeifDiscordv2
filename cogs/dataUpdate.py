@@ -98,8 +98,8 @@ class DataUpdate(commands.Cog):
         self.load_data()
 
         mission_states = ["attending", "absent", "deltagerliste"]
-        for mission_state in mission_states:
-            for mission_date_time, value in self.mission.items():
+        for mission_date_time, value in self.mission.items():
+            for mission_state in mission_states:
                 mission_type = value['type']
                 if mission_type != "Torsdags Mission" and mission_state == "deltagerliste":
                     continue 
@@ -130,7 +130,7 @@ class DataUpdate(commands.Cog):
                     sorted_list_chunk_2 = ''.join(list(sorted_list_chunks[1]))
                     sorted_list_chunk_3 = ''.join(list(sorted_list_chunks[2]))
 
-                    leifbot_embed = discord.Embed(title=f"Member database entries updated.\n\n{mission_type}\n{mission_date_time}\n{mission_state}", color=0x303136)
+                    leifbot_embed = discord.Embed(title=f"__**{mission_type}**__ *database updated.*\n{mission_date_time}\n{mission_state}", color=0x303136)
                     if sorted_list_chunk_1 != "":
                         leifbot_embed.add_field(name="\u200B", value=f"{sorted_list_chunk_1}")
                     if sorted_list_chunk_2 != "":
