@@ -17,3 +17,6 @@ Currently the bot has following features:
 - Music integration with Lavalink 
 
 ![alt text](https://media.discordapp.net/attachments/747967053050151014/806795230627364884/Discord_bot.PNG?width=402&height=667)
+![alt text](https://media.discordapp.net/attachments/747967053050151014/809109354200301599/unknown.png)
+![alt text](https://media.discordapp.net/attachments/747967053050151014/809109794249637898/unknown.png?width=344&height=676)
+![alt text](https://media.discordapp.net/attachments/747967053050151014/809109462077800457/unknown.png)
