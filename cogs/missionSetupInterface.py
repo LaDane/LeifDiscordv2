@@ -38,8 +38,9 @@ class MissionSetupInterface(commands.Cog):
         guild = ctx.message.guild
         member = guild.get_member(ctx.author.id)
         udvikler_role = discord.utils.get(guild.roles, name='Udvikler')
+        ai_role = discord.utils.get(guild.roles, name='AI')
 
-        if udvikler_role in member.roles:
+        if udvikler_role in member.roles or ai_role in member.roles:
             self.load_data()
             ny_mission_channel = self.bot.get_channel(self.id["RDF"]["ny_mission_channel_id"])
             if ny_mission_channel == ctx.channel:
