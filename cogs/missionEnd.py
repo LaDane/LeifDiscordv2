@@ -33,18 +33,20 @@ class MissionEnd(commands.Cog):
             guild = self.bot.get_guild(payload.guild_id)
             member = guild.get_member(payload.user_id)
             udvikler_role = discord.utils.get(guild.roles, name='Udvikler')
+            ai_role = discord.utils.get(guild.roles, name='AI')
 
-            if reaction == '\U0001F51A' and udvikler_role in member.roles:
-                self.u_mission = UpdateMission(self.bot)
-                mission_type = self.mission[mission_date_time]['type']
-                if mission_type == "Torsdags Mission":
-                    await self.u_mission.UpdateMissionEmbed(guild, mission_date_time, mission_type, True)
-                if mission_type in ["Hygge Mission", "Special Events"]:
-                    await self.u_mission.UpdateHyggeSpecialEmbed(guild, mission_date_time, mission_type, True)
+            if reaction == '\U0001F51A':
+                if udvikler_role in member.roles or ai_role in member.roles:
+                    self.u_mission = UpdateMission(self.bot)
+                    mission_type = self.mission[mission_date_time]['type']
+                    if mission_type == "Torsdags Mission":
+                        await self.u_mission.UpdateMissionEmbed(guild, mission_date_time, mission_type, True)
+                    if mission_type in ["Hygge Mission", "Special Events"]:
+                        await self.u_mission.UpdateHyggeSpecialEmbed(guild, mission_date_time, mission_type, True)
 
-                leifbot_channel = discord.utils.get(guild.text_channels, name="leifbot")
-                leifbot_embed = discord.Embed(title="Mission Afsluttet", description=f"<@{payload.user_id}> har afsluttet en **{mission_type}**",color=0x303136)
-                await leifbot_channel.send(embed=leifbot_embed)                    
+                    leifbot_channel = discord.utils.get(guild.text_channels, name="leifbot")
+                    leifbot_embed = discord.Embed(title="Mission Afsluttet", description=f"<@{payload.user_id}> har afsluttet en **{mission_type}**",color=0x303136)
+                    await leifbot_channel.send(embed=leifbot_embed)                    
 
 def setup(bot):
     bot.add_cog(MissionEnd(bot))
