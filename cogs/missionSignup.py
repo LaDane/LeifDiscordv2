@@ -77,8 +77,10 @@ class MissionSignup(commands.Cog):
                     self.mission[mission_date_time]['absent'][member_id]['group'] = member_group                     
                     if member_group == "Gruppeløs":
                         self.mission[mission_date_time]['absent'][member_id]['emoji_member_id'] = f":grey_question: <@{member_id}>"
-                    elif member_group != "Gruppeløs":
+                    elif member_group != "Gruppeløs" and member_group != "Orlov":
                         self.mission[mission_date_time]['absent'][member_id]['emoji_member_id'] = f"{self.g_emoji.guild_groups[member_group]} <@{member_id}>"
+                    elif member_group == "Orlov":
+                        self.mission[mission_date_time]['absent'][member_id]['emoji_member_id'] = f":palm_tree: <@{member_id}>"
 
                 if mission_type == "Torsdags Mission":
                     if str(member_id) in self.mission[mission_date_time]['deltagerliste']:
