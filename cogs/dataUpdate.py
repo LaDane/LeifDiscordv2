@@ -58,8 +58,9 @@ class DataUpdate(commands.Cog):
         member = guild.get_member(ctx.author.id)
         udvikler_role = discord.utils.get(guild.roles, name='Udvikler')
         leifbot_channel = self.bot.get_channel(self.id["RDF"]["leifbot_channel_id"])
+        ai_role = discord.utils.get(guild.roles, name='AI')
 
-        if udvikler_role in member.roles:
+        if udvikler_role in member.roles or ai_role in member.roles:
             if leifbot_channel == ctx.channel:
                 leifbot_embed = discord.Embed(title="Data update", description=f"<@{ctx.author.id}> has run **+dataupdate**, starting to update json data entries", color=0x303136)
                 await leifbot_channel.send(embed=leifbot_embed)                
@@ -232,8 +233,12 @@ class DataUpdate(commands.Cog):
                                 self.mission[mission_date_time][mission_state][member_id]['user_name'] = member_nick 
                                 self.mission[mission_date_time][mission_state][member_id]['group'] = group_name
                                 self.mission[mission_date_time][mission_state][member_id]['role'] = role_name
-                                self.mission[mission_date_time][mission_state][member_id]['emoji_member_id'] = f"{role_emoji} <@{member_id}>"
-                                break   
+
+                                if mission_state == "absent":
+                                    self.mission[mission_date_time][mission_state][member_id]['emoji_member_id'] = f"{group_emoji} <@{member_id}>"
+                                else:
+                                    self.mission[mission_date_time][mission_state][member_id]['emoji_member_id'] = f"{role_emoji} <@{member_id}>"
+                                    break   
                     else:
                         self.mission[mission_date_time][mission_state][member_id] = {}
                         self.mission[mission_date_time][mission_state][member_id]['user_name'] = member_nick 
