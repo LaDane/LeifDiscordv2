@@ -45,8 +45,8 @@
             },
             "143272192354942976": {
                 "user_name": "M. Jeong",
-                "group": "2-3",
-                "emoji_member_id": "<:23:799386483025772635> <@143272192354942976>"
+                "group": "St\u00f8t-Sek",
+                "emoji_member_id": "<:Support:887324411965898763> <@143272192354942976>"
             },
             "215234804139032576": {
                 "user_name": "N. Andersen",
@@ -58,12 +58,6 @@
                 "user_name": "Anders Johnson",
                 "group": "Zeus",
                 "emoji_member_id": "<:ZEUS:737775519290097704> <@183299826870386689>"
-            },
-            "212238899613925376": {
-                "user_name": "A. Will",
-                "group": "1-1",
-                "role": "GF",
-                "emoji_member_id": "<:GF:737775519084445758> <@212238899613925376>"
             },
             "214812184121704449": {
                 "user_name": "M. Skou",
@@ -79,8 +73,8 @@
             },
             "234633460222918657": {
                 "user_name": "B. Petterson",
-                "group": "2-3",
-                "emoji_member_id": "<:23:799386483025772635> <@234633460222918657>"
+                "group": "St\u00f8t-Sek",
+                "emoji_member_id": "<:Support:887324411965898763> <@234633460222918657>"
             },
             "229556906274848768": {
                 "user_name": "M. Steen",
@@ -134,23 +128,23 @@
             },
             "293752115602391041": {
                 "user_name": "E. Frederiksen",
-                "group": "2-3",
-                "emoji_member_id": "<:23:799386483025772635> <@293752115602391041>"
+                "group": "St\u00f8t-Sek",
+                "emoji_member_id": "<:Support:887324411965898763> <@293752115602391041>"
             },
             "227070737268211712": {
                 "user_name": "L. Ilsted",
-                "group": "2-3",
-                "emoji_member_id": "<:23:799386483025772635> <@227070737268211712>"
+                "group": "St\u00f8t-Sek",
+                "emoji_member_id": "<:Support:887324411965898763> <@227070737268211712>"
             },
             "302926566004883456": {
                 "user_name": "S. Friis",
-                "group": "2-3",
-                "emoji_member_id": "<:23:799386483025772635> <@302926566004883456>"
+                "group": "St\u00f8t-Sek",
+                "emoji_member_id": "<:Support:887324411965898763> <@302926566004883456>"
             },
             "166174495160270848": {
                 "user_name": "M. Lohse",
-                "group": "2-3",
-                "emoji_member_id": "<:23:799386483025772635> <@166174495160270848>"
+                "group": "St\u00f8t-Sek",
+                "emoji_member_id": "<:Support:887324411965898763> <@166174495160270848>"
             },
             "217942449497047042": {
                 "user_name": "T. Wahl",
@@ -178,8 +172,8 @@
             },
             "254661354370105344": {
                 "user_name": "E. Vilhelmsen",
-                "group": "2-3",
-                "emoji_member_id": "<:23:799386483025772635> <@254661354370105344>"
+                "group": "St\u00f8t-Sek",
+                "emoji_member_id": "<:Support:887324411965898763> <@254661354370105344>"
             },
             "323141831682424833": {
                 "user_name": "R. Poulsen",
@@ -292,6 +286,12 @@
                 "group": "2-2",
                 "role": "LMG1",
                 "emoji_member_id": "<:LMG1:737775518832918683> <@213000350297358346>"
+            },
+            "212238899613925376": {
+                "user_name": "A. Will",
+                "group": "1-1",
+                "role": "GF",
+                "emoji_member_id": "<:GF:737775519084445758> <@212238899613925376>"
             }
         },
         "absent": {
@@ -386,11 +386,6 @@
                 "user_name": "J. Markussen",
                 "group": "Orlov",
                 "emoji_member_id": ":palm_tree: <@182828262026641412>"
-            },
-            "416279424334299142": {
-                "user_name": "M. Holde",
-                "group": "Gruppel\u00f8s",
-                "emoji_member_id": ":grey_question: <@416279424334299142>"
             },
             "708420588431212639": {
                 "user_name": "M. Overgaard",

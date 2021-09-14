@@ -23,7 +23,16 @@ class UpdateMission:
             return
         if expected_update == "Torsdags Mission":
             channel = discord.utils.get(guild.text_channels, name = "torsdags-mission")
-            original_embed_msg = await channel.fetch_message(self.mission[mission_date_time]['torsdags_mission_embed_msg_id'])
+            
+            original_embed_msg = ""
+            try:
+                original_embed_msg = await channel.fetch_message(self.mission[mission_date_time]['torsdags_mission_embed_msg_id'])
+            except:
+                del self.mission[mission_date_time]
+                fh.save_file(self.mission, 'mission')
+                print("Somebody has deleted the torsdags mission message. Deleting json entry")
+                return
+            
             absent_members = await self.listroles.list_emoji_member_id_json(mission_date_time, "absent", "None", expected_update)           # absent members
             absent_members_amount = len(absent_members.split())
             absent_members_amount //= 2
@@ -100,7 +109,15 @@ class UpdateMission:
             channel = discord.utils.get(guild.text_channels, name="hygge-mission")
         if mission_type == "Special Events":
             channel = discord.utils.get(guild.text_channels, name="special-events")
-        original_embed_msg = await channel.fetch_message(self.mission[mission_date_time]['mission_msg_id'])
+
+        original_embed_msg = ""
+        try:
+            original_embed_msg = await channel.fetch_message(self.mission[mission_date_time]['mission_msg_id'])
+        except:
+            del self.mission[mission_date_time]
+            fh.save_file(self.mission, 'mission')
+            print("Somebody has deleted the hygge/special mission message. Deleting json entry")
+            return
 
         if ended == True:
             await original_embed_msg.delete()

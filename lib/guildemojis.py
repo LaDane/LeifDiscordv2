@@ -22,7 +22,7 @@ class GuildEmojis:
 
         self.guild_groups = {'Kompagni-Stab' : self.kompagni_emoji(guild), '1. Del-Stab' : self.del_emoji(guild), '2. Del-Stab' : self.to_del_emoji(guild),
                      '1-1' : self.en_en_emoji(guild), '1-2' : self.en_to_emoji(guild), '1-3' : self.en_tre_emoji(guild),
-                     '2-1' : self.to_en_emoji(guild), '2-2' : self.to_to_emoji(guild), '2-3' : self.to_tre_emoji(guild),
+                     '2-1' : self.to_en_emoji(guild), '2-2' : self.to_to_emoji(guild), 'Støt-Sek' : self.support_emoji(guild),
                      'Lima' : self.lima_emoji(guild), 'Logi' : self.logi_emoji(guild), 'Zeus' : self.zeus_emoji(guild),
                      'Prøve Medlem' : self.prve_emoji(guild)
                      }
@@ -84,6 +84,8 @@ class GuildEmojis:
     def prve_emoji(self, guild):
         return get(guild.emojis, name='PRVE')
 
+    def support_emoji(self, guild):
+        return get(guild.emojis, name='Support')
 
 # FORMATTING
     def mission_date(self, guild):
