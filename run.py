@@ -10,3 +10,10 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+# BAT
+# cd C:\Users\Administrator\Desktop\DiscordLeif\LeifDiscordv2
+# python run.py
+# pause

@@ -1,195 +1,16 @@
 {
-    "2021-09-16 18:00:00": {
+    "2021-10-14 18:00:00": {
         "type": "Torsdags Mission",
-        "date": "2021-09-16",
+        "date": "2021-10-14",
         "time": "18:00",
-        "torsdags_mission_embed_msg_id": 885613702131376199,
-        "deltagerliste_not_responded_embed_msg_id": 885613667662569482,
-        "deltagerliste_reserved_embed_msg_id": 885613668623085608,
+        "torsdags_mission_embed_msg_id": 895758729511837737,
+        "deltagerliste_not_responded_embed_msg_id": 895758679444435016,
+        "deltagerliste_reserved_embed_msg_id": 895758680253952121,
         "attending": {
-            "248477294769733633": {
-                "user_name": "P. Petersen",
-                "group": "Kompagni-Stab",
-                "role": "KC",
-                "emoji_member_id": "<:KC:793084094660739084> <@248477294769733633>"
-            },
-            "281461673859088385": {
-                "user_name": "B. L\u00f8ve",
-                "group": "1-2",
-                "role": "GF",
-                "emoji_member_id": "<:GF:737775519084445758> <@281461673859088385>"
-            },
-            "293005440432996353": {
-                "user_name": "W. Skovby",
-                "group": "1-2",
-                "role": "SYHJ",
-                "emoji_member_id": "<:SYHJ:737775519298224158> <@293005440432996353>"
-            },
-            "283627719403503616": {
-                "user_name": "J. Harlev",
-                "group": "1-2",
-                "role": "LMG1",
-                "emoji_member_id": "<:LMG1:737775518832918683> <@283627719403503616>"
-            },
-            "422849627016921089": {
-                "user_name": "W. Sterum",
-                "group": "2-2",
-                "role": "GF",
-                "emoji_member_id": "<:GF:737775519084445758> <@422849627016921089>"
-            },
-            "137582887489896448": {
-                "user_name": "K. Jakobsen",
-                "group": "1-1",
-                "role": "NK",
-                "emoji_member_id": "<:GV1:761854451128074280> <@137582887489896448>"
-            },
-            "143272192354942976": {
-                "user_name": "M. Jeong",
-                "group": "St\u00f8t-Sek",
-                "emoji_member_id": "<:Support:887324411965898763> <@143272192354942976>"
-            },
-            "215234804139032576": {
-                "user_name": "N. Andersen",
-                "group": "2. Del-Stab",
-                "role": "DF",
-                "emoji_member_id": "<:DF:737775518954553385> <@215234804139032576>"
-            },
-            "183299826870386689": {
-                "user_name": "Anders Johnson",
-                "group": "Zeus",
-                "emoji_member_id": "<:ZEUS:737775519290097704> <@183299826870386689>"
-            },
-            "214812184121704449": {
-                "user_name": "M. Skou",
-                "group": "1-3",
-                "role": "GF",
-                "emoji_member_id": "<:GF:737775519084445758> <@214812184121704449>"
-            },
-            "253921735567605761": {
-                "user_name": "J. S\u00f8rensen",
-                "group": "1-3",
-                "role": "NK",
-                "emoji_member_id": "<:GV1:761854451128074280> <@253921735567605761>"
-            },
-            "234633460222918657": {
-                "user_name": "B. Petterson",
-                "group": "St\u00f8t-Sek",
-                "emoji_member_id": "<:Support:887324411965898763> <@234633460222918657>"
-            },
-            "229556906274848768": {
-                "user_name": "M. Steen",
-                "group": "1-1",
-                "role": "GV2",
-                "emoji_member_id": "<:GV2:737775519231377509> <@229556906274848768>"
-            },
-            "210363968743538688": {
-                "user_name": "R. Lohse",
-                "group": "2-1",
-                "role": "NK",
-                "emoji_member_id": "<:GV1:761854451128074280> <@210363968743538688>"
-            },
-            "609446621091987466": {
-                "user_name": "C. Pedersen",
-                "group": "Pr\u00f8ve Medlem",
-                "emoji_member_id": "<:PRVE:737775519268864001> <@609446621091987466>"
-            },
-            "587384983891607585": {
-                "user_name": "C. Schou",
-                "group": "1-3",
-                "role": "LMG2",
-                "emoji_member_id": "<:LMG2:737775519021400125> <@587384983891607585>"
-            },
-            "282636986659897344": {
-                "user_name": "N. Jensen",
-                "group": "Pr\u00f8ve Medlem",
-                "emoji_member_id": "<:PRVE:737775519268864001> <@282636986659897344>"
-            },
-            "145232216257986562": {
-                "user_name": "F.Fisker",
-                "group": "2-1",
-                "role": "LMG2",
-                "emoji_member_id": "<:LMG2:737775519021400125> <@145232216257986562>"
-            },
-            "303562863916613632": {
-                "user_name": "M.karlsson",
-                "group": "Pr\u00f8ve Medlem",
-                "emoji_member_id": "<:PRVE:737775519268864001> <@303562863916613632>"
-            },
-            "333695297240956931": {
-                "user_name": "N. Wulff",
-                "group": "Pr\u00f8ve Medlem",
-                "emoji_member_id": "<:PRVE:737775519268864001> <@333695297240956931>"
-            },
-            "393693476098801665": {
-                "user_name": "F. Waldemar",
-                "group": "2-2",
-                "role": "NK",
-                "emoji_member_id": "<:GV1:761854451128074280> <@393693476098801665>"
-            },
-            "293752115602391041": {
-                "user_name": "E. Frederiksen",
-                "group": "St\u00f8t-Sek",
-                "emoji_member_id": "<:Support:887324411965898763> <@293752115602391041>"
-            },
-            "227070737268211712": {
-                "user_name": "L. Ilsted",
-                "group": "St\u00f8t-Sek",
-                "emoji_member_id": "<:Support:887324411965898763> <@227070737268211712>"
-            },
             "302926566004883456": {
                 "user_name": "S. Friis",
                 "group": "St\u00f8t-Sek",
                 "emoji_member_id": "<:Support:887324411965898763> <@302926566004883456>"
-            },
-            "166174495160270848": {
-                "user_name": "M. Lohse",
-                "group": "St\u00f8t-Sek",
-                "emoji_member_id": "<:Support:887324411965898763> <@166174495160270848>"
-            },
-            "217942449497047042": {
-                "user_name": "T. Wahl",
-                "group": "1. Del-Stab",
-                "role": "DELSYHJ",
-                "emoji_member_id": "<:DELSYHJ:737775519294291972> <@217942449497047042>"
-            },
-            "155112296576843776": {
-                "user_name": "J. Laine",
-                "group": "1-1",
-                "role": "LMG1",
-                "emoji_member_id": "<:LMG1:737775518832918683> <@155112296576843776>"
-            },
-            "135447962951221250": {
-                "user_name": "S. Robertsen",
-                "group": "1-3",
-                "role": "SYHJ",
-                "emoji_member_id": "<:SYHJ:737775519298224158> <@135447962951221250>"
-            },
-            "221385256958164992": {
-                "user_name": "N. Bedsted",
-                "group": "2. Del-Stab",
-                "role": "SIKMD",
-                "emoji_member_id": "<:SIKMD:799176866376187904> <@221385256958164992>"
-            },
-            "254661354370105344": {
-                "user_name": "E. Vilhelmsen",
-                "group": "St\u00f8t-Sek",
-                "emoji_member_id": "<:Support:887324411965898763> <@254661354370105344>"
-            },
-            "323141831682424833": {
-                "user_name": "R. Poulsen",
-                "group": "2-2",
-                "role": "LMG2",
-                "emoji_member_id": "<:LMG2:737775519021400125> <@323141831682424833>"
-            },
-            "158995232254459904": {
-                "user_name": "L. Grave",
-                "group": "Zeus",
-                "emoji_member_id": "<:ZEUS:737775519290097704> <@158995232254459904>"
-            },
-            "183276643693887488": {
-                "user_name": "A. Arnsdorf",
-                "group": "Gruppel\u00f8s",
-                "emoji_member_id": ":grey_question: <@183276643693887488>"
             },
             "255413877276147714": {
                 "user_name": "D. Moeller",
@@ -197,83 +18,45 @@
                 "role": "SIGMD",
                 "emoji_member_id": "<:SIGMD:737775519273058465> <@255413877276147714>"
             },
-            "270240934426312710": {
-                "user_name": "A. J\u00f8rgensen",
-                "group": "2-1",
-                "role": "LMG1",
-                "emoji_member_id": "<:LMG1:737775518832918683> <@270240934426312710>"
+            "143272192354942976": {
+                "user_name": "M. Jeong",
+                "group": "St\u00f8t-Sek",
+                "emoji_member_id": "<:Support:887324411965898763> <@143272192354942976>"
             },
-            "355786845378052106": {
-                "user_name": "R. \u00d8stergaard",
+            "214812184121704449": {
+                "user_name": "M. Skou",
                 "group": "1-3",
-                "role": "LMG1",
-                "emoji_member_id": "<:LMG1:737775518832918683> <@355786845378052106>"
+                "role": "GF",
+                "emoji_member_id": "<:GF:737775519084445758> <@214812184121704449>"
             },
-            "188902445001211905": {
-                "user_name": "J. Sandholm",
-                "group": "1-1",
+            "587384983891607585": {
+                "user_name": "C. Schou",
+                "group": "1-3",
                 "role": "LMG2",
-                "emoji_member_id": "<:LMG2:737775519021400125> <@188902445001211905>"
+                "emoji_member_id": "<:LMG2:737775519021400125> <@587384983891607585>"
             },
             "442403117414350848": {
                 "user_name": "J. J\u00e6ger",
-                "group": "Pr\u00f8ve Medlem",
-                "emoji_member_id": "<:PRVE:737775519268864001> <@442403117414350848>"
+                "group": "2-3",
+                "role": "LMG1",
+                "emoji_member_id": "<:LMG1:737775518832918683> <@442403117414350848>"
             },
-            "263417981759913985": {
-                "user_name": "N. Emil",
-                "group": "2-2",
-                "role": "SYHJ",
-                "emoji_member_id": "<:SYHJ:737775519298224158> <@263417981759913985>"
+            "254661354370105344": {
+                "user_name": "E. Vilhelmsen",
+                "group": "St\u00f8t-Sek",
+                "emoji_member_id": "<:Support:887324411965898763> <@254661354370105344>"
             },
-            "288008417812021248": {
-                "user_name": "N. Bay",
-                "group": "2-1",
-                "role": "GV4",
-                "emoji_member_id": "<:GV4:737775519398887625> <@288008417812021248>"
+            "280986122048372737": {
+                "user_name": "D. Ploug",
+                "group": "2-3",
+                "role": "NK",
+                "emoji_member_id": "<:GV1:761854451128074280> <@280986122048372737>"
             },
-            "583425790910136321": {
-                "user_name": "P. Houmann",
-                "group": "Gruppel\u00f8s",
-                "emoji_member_id": ":grey_question: <@583425790910136321>"
-            },
-            "109749984785666048": {
-                "user_name": "J.L.S. Cyano",
-                "group": "Pr\u00f8ve Medlem",
-                "emoji_member_id": "<:PRVE:737775519268864001> <@109749984785666048>"
-            },
-            "240164429289750528": {
-                "user_name": "Bo Vinsl\u00f8v",
-                "group": "1-3",
-                "role": "GV5",
-                "emoji_member_id": "<:GV5:737775519247892591> <@240164429289750528>"
-            },
-            "271742120560164864": {
-                "user_name": "H.N\u00f8rgaard",
-                "group": "2. Del-Stab",
-                "role": "DELSYHJ",
-                "emoji_member_id": "<:DELSYHJ:737775519294291972> <@271742120560164864>"
-            },
-            "298492124389834753": {
-                "user_name": "P. Nielsen",
-                "group": "Gruppel\u00f8s",
-                "emoji_member_id": ":grey_question: <@298492124389834753>"
-            },
-            "276491072434208769": {
-                "user_name": "M. Schwarz",
-                "group": "2-2",
-                "role": "GV2",
-                "emoji_member_id": "<:GV2:737775519231377509> <@276491072434208769>"
-            },
-            "792165215482806352": {
-                "user_name": "N. Vestergaard",
-                "group": "Pr\u00f8ve Medlem",
-                "emoji_member_id": "<:PRVE:737775519268864001> <@792165215482806352>"
-            },
-            "417834846329634816": {
-                "user_name": "E.S.B. Sundberg",
-                "group": "Gruppel\u00f8s",
-                "emoji_member_id": ":grey_question: <@417834846329634816>"
+            "137582887489896448": {
+                "user_name": "K. Jakobsen",
+                "group": "1-1",
+                "role": "NK",
+                "emoji_member_id": "<:GV1:761854451128074280> <@137582887489896448>"
             },
             "236447940682579969": {
                 "user_name": "S. Thomsen",
@@ -281,11 +64,133 @@
                 "role": "ADMBM",
                 "emoji_member_id": "<:ADMBM:737775519432441909> <@236447940682579969>"
             },
+            "183299826870386689": {
+                "user_name": "A. Johnson",
+                "group": "Zeus",
+                "emoji_member_id": "<:ZEUS:737775519290097704> <@183299826870386689>"
+            },
+            "293752115602391041": {
+                "user_name": "E. Frederiksen",
+                "group": "St\u00f8t-Sek",
+                "emoji_member_id": "<:Support:887324411965898763> <@293752115602391041>"
+            },
+            "298492124389834753": {
+                "user_name": "P. Nielsen",
+                "group": "2-1",
+                "role": "NK",
+                "emoji_member_id": "<:GV1:761854451128074280> <@298492124389834753>"
+            },
+            "229556906274848768": {
+                "user_name": "M. Steen",
+                "group": "1-1",
+                "role": "GV2",
+                "emoji_member_id": "<:GV2:737775519231377509> <@229556906274848768>"
+            },
+            "393693476098801665": {
+                "user_name": "F. Waldemar",
+                "group": "2-2",
+                "role": "NK",
+                "emoji_member_id": "<:GV1:761854451128074280> <@393693476098801665>"
+            },
+            "158995232254459904": {
+                "user_name": "L. Grave",
+                "group": "Zeus",
+                "emoji_member_id": "<:ZEUS:737775519290097704> <@158995232254459904>"
+            },
+            "281461673859088385": {
+                "user_name": "B. L\u00f8ve",
+                "group": "1. Del-Stab",
+                "role": "GF",
+                "emoji_member_id": "<:GF:737775519084445758> <@281461673859088385>"
+            },
+            "283627719403503616": {
+                "user_name": "J. Harlev",
+                "group": "1-2",
+                "role": "LMG1",
+                "emoji_member_id": "<:LMG1:737775518832918683> <@283627719403503616>"
+            },
+            "253921735567605761": {
+                "user_name": "J. S\u00f8rensen",
+                "group": "1-3",
+                "role": "NK",
+                "emoji_member_id": "<:GV1:761854451128074280> <@253921735567605761>"
+            },
+            "263417981759913985": {
+                "user_name": "N. Emil",
+                "group": "2-2",
+                "role": "SYHJ",
+                "emoji_member_id": "<:SYHJ:737775519298224158> <@263417981759913985>"
+            },
             "213000350297358346": {
                 "user_name": "C. J\u00f8rgensen",
                 "group": "2-2",
                 "role": "LMG1",
                 "emoji_member_id": "<:LMG1:737775518832918683> <@213000350297358346>"
+            },
+            "271742120560164864": {
+                "user_name": "H.N\u00f8rgaard",
+                "group": "2. Del-Stab",
+                "role": "DELSYHJ",
+                "emoji_member_id": "<:DELSYHJ:737775519294291972> <@271742120560164864>"
+            },
+            "145232216257986562": {
+                "user_name": "F.Fisker",
+                "group": "2-1",
+                "role": "LMG2",
+                "emoji_member_id": "<:LMG2:737775519021400125> <@145232216257986562>"
+            },
+            "135447962951221250": {
+                "user_name": "S. Robertsen",
+                "group": "1-3",
+                "role": "SYHJ",
+                "emoji_member_id": "<:SYHJ:737775519298224158> <@135447962951221250>"
+            },
+            "217942449497047042": {
+                "user_name": "T. Wahl",
+                "group": "1. Del-Stab",
+                "role": "DELSYHJ",
+                "emoji_member_id": "<:DELSYHJ:737775519294291972> <@217942449497047042>"
+            },
+            "333695297240956931": {
+                "user_name": "N. Wulff",
+                "group": "2-3",
+                "role": "GF",
+                "emoji_member_id": "<:GF:737775519084445758> <@333695297240956931>"
+            },
+            "355786845378052106": {
+                "user_name": "R. \u00d8stergaard",
+                "group": "1-3",
+                "role": "LMG1",
+                "emoji_member_id": "<:LMG1:737775518832918683> <@355786845378052106>"
+            },
+            "166174495160270848": {
+                "user_name": "M. Lohse",
+                "group": "St\u00f8t-Sek",
+                "emoji_member_id": "<:Support:887324411965898763> <@166174495160270848>"
+            },
+            "270240934426312710": {
+                "user_name": "A. J\u00f8rgensen",
+                "group": "2-1",
+                "role": "LMG1",
+                "emoji_member_id": "<:LMG1:737775518832918683> <@270240934426312710>"
+            },
+            "210363968743538688": {
+                "user_name": "R. Lohse",
+                "group": "2-1",
+                "role": "GF",
+                "emoji_member_id": "<:GF:737775519084445758> <@210363968743538688>"
+            },
+            "188902445001211905": {
+                "user_name": "J. Sandholm",
+                "group": "1-1",
+                "role": "LMG2",
+                "emoji_member_id": "<:LMG2:737775519021400125> <@188902445001211905>"
+            },
+            "276491072434208769": {
+                "user_name": "M. Schwarz",
+                "group": "2-2",
+                "role": "GV2",
+                "emoji_member_id": "<:GV2:737775519231377509> <@276491072434208769>"
             },
             "212238899613925376": {
                 "user_name": "A. Will",
@@ -295,117 +200,185 @@
             }
         },
         "absent": {
-            "253902265163841537": {
-                "user_name": "E. Thorup",
-                "group": "Gruppel\u00f8s",
-                "emoji_member_id": ":grey_question: <@253902265163841537>"
+            "227070737268211712": {
+                "user_name": "L. Ilsted",
+                "group": "St\u00f8t-Sek",
+                "emoji_member_id": "<:Support:887324411965898763> <@227070737268211712>"
             },
-            "173088627838943232": {
-                "user_name": "D. Hyldtoft",
-                "group": "2-1",
-                "emoji_member_id": "<:21:799178191175680000> <@173088627838943232>"
+            "234633460222918657": {
+                "user_name": "B. Petterson",
+                "group": "St\u00f8t-Sek",
+                "emoji_member_id": "<:Support:887324411965898763> <@234633460222918657>"
             },
-            "288607414050226178": {
-                "user_name": "M. Bindslev",
+            "288008417812021248": {
+                "user_name": "N. Bay",
                 "group": "Orlov",
-                "emoji_member_id": ":palm_tree: <@288607414050226178>"
+                "emoji_member_id": ":palm_tree: <@288008417812021248>"
             },
-            "266123461385125889": {
-                "user_name": "B. Buehoej",
-                "group": "Orlov",
-                "emoji_member_id": ":palm_tree: <@266123461385125889>"
-            },
-            "195049315146792960": {
-                "user_name": "T. Bilgrav",
-                "group": "1-3",
-                "emoji_member_id": "<:13:737775519239635015> <@195049315146792960>"
-            },
-            "280986122048372737": {
-                "user_name": "D. Ploug",
-                "group": "1-3",
-                "emoji_member_id": "<:13:737775519239635015> <@280986122048372737>"
-            },
-            "244813824706871296": {
-                "user_name": "D.K\u00f8neke",
-                "group": "2-1",
-                "emoji_member_id": "<:21:799178191175680000> <@244813824706871296>"
+            "422849627016921089": {
+                "user_name": "W. Sterum",
+                "group": "2-2",
+                "emoji_member_id": "<:22:799178247757627442> <@422849627016921089>"
             }
         },
         "deltagerliste": {
-            "347801126730727424": {
-                "user_name": "H. Rasmussen",
-                "group": "Orlov",
-                "emoji_member_id": ":palm_tree: <@347801126730727424>"
-            },
-            "239382908899557376": {
-                "user_name": "C. Poulsen",
-                "group": "Orlov",
-                "emoji_member_id": ":palm_tree: <@239382908899557376>"
-            },
-            "173856144786194432": {
-                "user_name": "V.  Eriksen",
+            "417834846329634816": {
+                "user_name": "E.S.B. Sundberg",
                 "group": "Gruppel\u00f8s",
-                "emoji_member_id": ":grey_question: <@173856144786194432>"
-            },
-            "219353126006685697": {
-                "user_name": "J. Skadhede",
-                "group": "Orlov",
-                "emoji_member_id": ":palm_tree: <@219353126006685697>"
-            },
-            "249974510126759947": {
-                "user_name": "U. Vestergaard",
-                "group": "Orlov",
-                "emoji_member_id": ":palm_tree: <@249974510126759947>"
-            },
-            "258300262496731136": {
-                "user_name": "L. Steenholdt",
-                "group": "Orlov",
-                "emoji_member_id": ":palm_tree: <@258300262496731136>"
-            },
-            "181060699093598209": {
-                "user_name": "L. Olander",
-                "group": "Gruppel\u00f8s",
-                "emoji_member_id": ":grey_question: <@181060699093598209>"
-            },
-            "663757388003672064": {
-                "user_name": "B. Hansen",
-                "group": "Orlov",
-                "emoji_member_id": ":palm_tree: <@663757388003672064>"
-            },
-            "187257258835443712": {
-                "user_name": "A. M\u00f8ller",
-                "group": "Orlov",
-                "emoji_member_id": ":palm_tree: <@187257258835443712>"
-            },
-            "500738456972951552": {
-                "user_name": "D. Aziz",
-                "group": "Pr\u00f8ve Medlem",
-                "emoji_member_id": "<:PRVE:737775519268864001> <@500738456972951552>"
-            },
-            "182828262026641412": {
-                "user_name": "J. Markussen",
-                "group": "Orlov",
-                "emoji_member_id": ":palm_tree: <@182828262026641412>"
-            },
-            "708420588431212639": {
-                "user_name": "M. Overgaard",
-                "group": "Orlov",
-                "emoji_member_id": ":palm_tree: <@708420588431212639>"
+                "emoji_member_id": ":grey_question: <@417834846329634816>"
             },
             "183639283742146560": {
                 "user_name": "T. Hornbek",
                 "group": "Gruppel\u00f8s",
                 "emoji_member_id": ":grey_question: <@183639283742146560>"
             },
+            "181060699093598209": {
+                "user_name": "L. Olander",
+                "group": "Orlov",
+                "emoji_member_id": ":palm_tree: <@181060699093598209>"
+            },
+            "347801126730727424": {
+                "user_name": "H. Rasmussen",
+                "group": "Orlov",
+                "emoji_member_id": ":palm_tree: <@347801126730727424>"
+            },
             "139076718500642816": {
                 "user_name": "K. Iversen",
                 "group": "Orlov",
                 "emoji_member_id": ":palm_tree: <@139076718500642816>"
             },
+            "195049315146792960": {
+                "user_name": "T. Bilgrav",
+                "group": "Orlov",
+                "emoji_member_id": ":palm_tree: <@195049315146792960>"
+            },
+            "855510665895346206": {
+                "user_name": "E. Richter",
+                "group": "Pr\u00f8ve Medlem",
+                "emoji_member_id": "<:PRVE:737775519268864001> <@855510665895346206>"
+            },
+            "318064065769373698": {
+                "user_name": "S. \u00d8stergaard",
+                "group": "Pr\u00f8ve Medlem",
+                "emoji_member_id": "<:PRVE:737775519268864001> <@318064065769373698>"
+            },
+            "303562863916613632": {
+                "user_name": "M.karlsson",
+                "group": "2-3",
+                "role": "SYHJ",
+                "emoji_member_id": "<:SYHJ:737775519298224158> <@303562863916613632>"
+            },
+            "183276643693887488": {
+                "user_name": "A. Arnsdorf",
+                "group": "2-3",
+                "emoji_member_id": "<:23:892773726230286376> <@183276643693887488>"
+            },
+            "216960376573526016": {
+                "user_name": "M. Wiede",
+                "group": "Gruppel\u00f8s",
+                "emoji_member_id": ":grey_question: <@216960376573526016>"
+            },
+            "239382908899557376": {
+                "user_name": "C. Poulsen",
+                "group": "Orlov",
+                "emoji_member_id": ":palm_tree: <@239382908899557376>"
+            },
+            "663757388003672064": {
+                "user_name": "B. Hansen",
+                "group": "Orlov",
+                "emoji_member_id": ":palm_tree: <@663757388003672064>"
+            },
+            "253902265163841537": {
+                "user_name": "E. Thorup",
+                "group": "Gruppel\u00f8s",
+                "emoji_member_id": ":grey_question: <@253902265163841537>"
+            },
+            "583425790910136321": {
+                "user_name": "P. Houmann",
+                "group": "Gruppel\u00f8s",
+                "emoji_member_id": ":grey_question: <@583425790910136321>"
+            },
+            "609446621091987466": {
+                "user_name": "C. Pedersen",
+                "group": "2-3",
+                "emoji_member_id": "<:23:892773726230286376> <@609446621091987466>"
+            },
             "862383600124821505": {
                 "user_name": "M. Beeck",
                 "group": "Pr\u00f8ve Medlem",
                 "emoji_member_id": "<:PRVE:737775519268864001> <@862383600124821505>"
+            },
+            "282636986659897344": {
+                "user_name": "N. Jensen",
+                "group": "Gruppel\u00f8s",
+                "emoji_member_id": ":grey_question: <@282636986659897344>"
+            },
+            "219353126006685697": {
+                "user_name": "J. Skadhede",
+                "group": "Orlov",
+                "emoji_member_id": ":palm_tree: <@219353126006685697>"
+            },
+            "182828262026641412": {
+                "user_name": "J. Markussen",
+                "group": "Orlov",
+                "emoji_member_id": ":palm_tree: <@182828262026641412>"
+            },
+            "288607414050226178": {
+                "user_name": "M. Bindslev",
+                "group": "Orlov",
+                "emoji_member_id": ":palm_tree: <@288607414050226178>"
+            },
+            "187257258835443712": {
+                "user_name": "A. M\u00f8ller",
+                "group": "Orlov",
+                "emoji_member_id": ":palm_tree: <@187257258835443712>"
+            },
+            "708420588431212639": {
+                "user_name": "M. Overgaard",
+                "group": "Orlov",
+                "emoji_member_id": ":palm_tree: <@708420588431212639>"
+            },
+            "173856144786194432": {
+                "user_name": "V.  Eriksen",
+                "group": "Gruppel\u00f8s",
+                "emoji_member_id": ":grey_question: <@173856144786194432>"
+            },
+            "248477294769733633": {
+                "user_name": "P. Petersen",
+                "group": "Kompagni-Stab",
+                "role": "KC",
+                "emoji_member_id": "<:KC:793084094660739084> <@248477294769733633>"
+            },
+            "258300262496731136": {
+                "user_name": "L. Steenholdt",
+                "group": "Orlov",
+                "emoji_member_id": ":palm_tree: <@258300262496731136>"
+            },
+            "266123461385125889": {
+                "user_name": "B. Buehoej",
+                "group": "Orlov",
+                "emoji_member_id": ":palm_tree: <@266123461385125889>"
+            },
+            "249974510126759947": {
+                "user_name": "U. Vestergaard",
+                "group": "Orlov",
+                "emoji_member_id": ":palm_tree: <@249974510126759947>"
+            },
+            "276808985770721280": {
+                "user_name": "N. Ritsmar",
+                "group": "Pr\u00f8ve Medlem",
+                "emoji_member_id": "<:PRVE:737775519268864001> <@276808985770721280>"
+            },
+            "273201293596557313": {
+                "user_name": "B. Pedersen",
+                "group": "Pr\u00f8ve Medlem",
+                "emoji_member_id": "<:PRVE:737775519268864001> <@273201293596557313>"
+            },
+            "293005440432996353": {
+                "user_name": "W. Skovby",
+                "group": "1. Del-Stab",
+                "role": "SYHJ",
+                "emoji_member_id": "<:SYHJ:737775519298224158> <@293005440432996353>"
             },
             "364781549108985866": {
                 "user_name": "N. Kirby",
@@ -413,11 +386,29 @@
                 "role": "DF",
                 "emoji_member_id": "<:DF:737775518954553385> <@364781549108985866>"
             },
+            "215234804139032576": {
+                "user_name": "N. Andersen",
+                "group": "2. Del-Stab",
+                "role": "DF",
+                "emoji_member_id": "<:DF:737775518954553385> <@215234804139032576>"
+            },
+            "221385256958164992": {
+                "user_name": "N. Bedsted",
+                "group": "2. Del-Stab",
+                "role": "SIKMD",
+                "emoji_member_id": "<:SIKMD:799176866376187904> <@221385256958164992>"
+            },
             "267644156774449152": {
                 "user_name": "M. Pol",
                 "group": "2. Del-Stab",
                 "role": "SIGMD",
                 "emoji_member_id": "<:SIGMD:737775519273058465> <@267644156774449152>"
+            },
+            "155112296576843776": {
+                "user_name": "J. Laine",
+                "group": "1-1",
+                "role": "LMG1",
+                "emoji_member_id": "<:LMG1:737775518832918683> <@155112296576843776>"
             },
             "278943407458746368": {
                 "user_name": "M.Ottosen",
@@ -425,11 +416,35 @@
                 "role": "SYHJ",
                 "emoji_member_id": "<:SYHJ:737775519298224158> <@278943407458746368>"
             },
-            "216960376573526016": {
-                "user_name": "M. Wiede",
-                "group": "2-2",
+            "240164429289750528": {
+                "user_name": "Bo Vinsl\u00f8v",
+                "group": "1-3",
+                "role": "GV5",
+                "emoji_member_id": "<:GV5:737775519247892591> <@240164429289750528>"
+            },
+            "173088627838943232": {
+                "user_name": "D. Hyldtoft",
+                "group": "2-1",
+                "role": "SYHJ",
+                "emoji_member_id": "<:SYHJ:737775519298224158> <@173088627838943232>"
+            },
+            "244813824706871296": {
+                "user_name": "D.K\u00f8neke",
+                "group": "2-1",
                 "role": "GV4",
-                "emoji_member_id": "<:GV4:737775519398887625> <@216960376573526016>"
+                "emoji_member_id": "<:GV4:737775519398887625> <@244813824706871296>"
+            },
+            "792165215482806352": {
+                "user_name": "N. Vestergaard",
+                "group": "2-1",
+                "role": "GV5",
+                "emoji_member_id": "<:GV5:737775519247892591> <@792165215482806352>"
+            },
+            "323141831682424833": {
+                "user_name": "R. Poulsen",
+                "group": "2-2",
+                "role": "LMG2",
+                "emoji_member_id": "<:LMG2:737775519021400125> <@323141831682424833>"
             },
             "231814505099689986": {
                 "user_name": "T. Andkj\u00e6r",

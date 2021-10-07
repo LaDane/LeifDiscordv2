@@ -202,7 +202,6 @@ class DataUpdate(commands.Cog):
         if can_continue == True:
             self.load_data()
             member_group = await self.g_usergroup.checkgroup(guild, member)
-
             for group_name, group_emoji in self.g_emoji.guild_groups.items():
                 key_group = discord.utils.get(guild.roles, name = group_name)
                 if prøve_role in member.roles:
