@@ -37,7 +37,7 @@ class UpdateMission:
             absent_members_amount = len(absent_members.split())
             absent_members_amount //= 2
             if len(absent_members) > 1000:
-                return "Kan ikke fremvises"
+                absent_members = "Kan ikke fremvises"
             state = "attending"
 
             if ended == True:
