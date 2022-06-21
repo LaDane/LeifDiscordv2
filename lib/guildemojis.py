@@ -84,6 +84,9 @@ class GuildEmojis:
     def prve_emoji(self, guild):
         return get(guild.emojis, name='PRVE')
 
+    # def orlov_emoji(self):
+    #     return ":palm_tree:"
+
     def support_emoji(self, guild):
         return get(guild.emojis, name='Support')
 

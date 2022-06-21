@@ -69,7 +69,10 @@ class MissionSignup(commands.Cog):
                         self.mission[mission_date_time]['attending'][member_id]['emoji_member_id'] = f"{self.g_emoji.guild_roles[member_role]} <@{member_id}>"
 
                     elif member_group != "Gruppeløs" and mission_type in ["Hygge Mission", "Special Events"]:
-                        self.mission[mission_date_time]['attending'][member_id]['emoji_member_id'] = f"{self.g_emoji.guild_groups[member_group]} <@{member_id}>"
+                        if member_group == "Orlov":
+                            self.mission[mission_date_time]['attending'][member_id]['emoji_member_id'] = f":palm_tree: <@{member_id}>"
+                        else:
+                            self.mission[mission_date_time]['attending'][member_id]['emoji_member_id'] = f"{self.g_emoji.guild_groups[member_group]} <@{member_id}>"
                     
                 if reaction == x_emoji and str(member_id) not in self.mission[mission_date_time]['attending']:
                     self.mission[mission_date_time]['absent'][member_id] = {}

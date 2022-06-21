@@ -40,7 +40,8 @@ class VideoTutorials(commands.Cog):
         await video_tutorials_channel.purge(limit = 5)
         video_tutorial_embed = discord.Embed(title="Her kan du finde tutorials lavet til RDF medlemmer",color=0x303136)
         video_tutorial_embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/729712343923294301/730044952687542273/RDF3.png")
-        video_tutorial_embed.add_field(name="\u200B", value="Konstabel Håndbogen kan læses [her](https://docs.google.com/document/d/1MwWPoQ4jht26IHfqRxKo7F2UBbV_sYNWz2PXXN8LP_8/edit)", inline=False)
+        video_tutorial_embed.add_field(name="\u200B", value="**Nyt ArmA Sync link kan hentes [her](https://drive.google.com/drive/folders/1tfLhIySbBJFQb97rSZK1N431PnaL6aSZ?usp=sharing)**", inline=False)
+        video_tutorial_embed.add_field(name="\u200B", value="Konstabel Håndbogen kan læses [her](https://drive.google.com/drive/folders/0B73GawQCWH52ZTk1anhPSS01dHM?resourcekey=0-Yxh37GXupas7hlw4cCs00A)", inline=False)
         for index, link in enumerate(self.vtuts['RDF']):
             video_tutorial_embed.add_field(name="\u200B", value=f"**#{index + 1} - {link}**", inline=False)
         await video_tutorials_channel.send(embed=video_tutorial_embed)

@@ -96,6 +96,17 @@ class UpdateMission:
         await original_embed_msg.edit(embed=embed)
 
         if ended == True:
+            for date_time, value in self.mission.items():
+                if date_time == mission_date_time and value['type'] == "Torsdags Mission":
+                    for userID_str in value['attending'].keys():
+                        userID = int(userID_str)
+                        member = guild.get_member(user_id)
+                        if (member != None):
+                            try:
+                                member.send("Tak for at du deltagede i RDF's torsdags mission!\nHusk at send feedback til Zeus / Udvilkingen så vi kan forbedre fremtidge missioner.\n**[Send feedback](https://rdfa3.dk/feedback/create)**")
+                            except:
+                                continue
+
             del self.mission[mission_date_time]
             fh.save_file(self.mission, 'mission')
 
